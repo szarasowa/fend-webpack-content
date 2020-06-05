@@ -1,5 +1,12 @@
+
 header {
     display: flex;
     justify-content: space-between;
     padding: 10px 40px;
+}
+
+.logo {
+    width: 300px;
+    height: 500px;
+    background-color: aquamarine;
 }
