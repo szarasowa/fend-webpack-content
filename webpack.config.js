@@ -3,4 +3,21 @@ const webpack = require('webpack')
 
 module.exports = {
     entry: './src/client/index.js',
+    module: {
+        rules: [
+            {
+                test: '/\.js$/',
+                exclude: /node_modules/,
+                loader: "babel-loader"
+            }, 
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i, 
+                use: [
+                  {
+                    loader: 'file-loader',
+                  },
+                ],
+            },
+        ]
+    }
 }
